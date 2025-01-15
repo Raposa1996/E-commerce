@@ -1,0 +1,454 @@
+/* style.css */
+
+/* ===============================
+   Variáveis de Cores e Fontes
+   =============================== */
+   :root {
+    --primary-color: #000000;
+    --secondary-color: #337ab7;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --gray-color: #666;
+    --card-border-color: #ddd;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   Estilos Globais
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===============================
+   Container Principal
+   =============================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===============================
+   Navbar
+   =============================== */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a, .navbar-links button {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover, .navbar-links button:hover {
+    color: #f1f1f1;
+}
+
+/* ===============================
+   Título da Página
+   =============================== */
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    color: var(--text-color);
+}
+
+/* ===============================
+   Layout do Container de Produtos
+   =============================== */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* ===============================
+   Estilo do Cartão de Produto
+   =============================== */
+.product-card {
+    background-color: white;
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px var(--card-shadow-color);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--card-shadow-color);
+}
+
+/* Imagem do Produto */
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Informações do Produto */
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: var(--gray-color);
+    margin-bottom: 20px;
+}
+
+/* Botões de Ações */
+.product-actions {
+    text-align: center;
+    padding: 10px;
+}
+
+.product-actions button {
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 6px var(--card-shadow-color);
+}
+
+.product-actions button:hover {
+    background-color: #285e8e;
+    transform: scale(1.05);
+}
+
+/* ===============================
+   Modal do Carrinho
+   =============================== */
+.cart-modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: none;
+    z-index: 1000;
+}
+
+/* Exibir o modal quando ativo */
+.cart-modal.active {
+    display: block;
+}
+
+/* ===============================
+   Responsividade
+   =============================== */
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar-links li {
+        margin-left: 10px;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}
+/* ===============================
+   Estilo do Footer (Centralizado)
+   =============================== */
+   .footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-content {
+    max-width: 600px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Ícones Sociais */
+.footer .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .social-icon i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer .social-icon:hover i {
+    color: var(--secondary-color);
+}
+
+/* ===============================
+   Responsividade do Footer
+   =============================== */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .footer-content {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ===============================
+   Estilo dos Botões no Modal
+   =============================== */
+   #cart-modal button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o botão Limpar Carrinho */
+#clear-cart {
+    background-color: #d9534f;
+    color: white;
+}
+
+#clear-cart:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+/* Estilo para o botão Conferir */
+#checkout {
+    background-color: #5bc0de;
+    color: white;
+}
+
+#checkout:hover {
+    background-color: #31b0d5;
+    transform: scale(1.05);
+}
+
+/* Estilo para o botão Fechar */
+#close-cart {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#close-cart:hover {
+    background-color: #ec971f;
+    transform: scale(1.05);
+}
+/* ===============================
+   Estilo do Container "Sobre a Loja"
+   =============================== */
+   .about-store {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-store .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Texto sobre a loja */
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+/* Imagem sobre a loja */
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ===============================
+   Responsividade
+   =============================== */
+@media (max-width: 768px) {
+    .about-store .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-text,
+    .about-image {
+        max-width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+/* ===============================
+   Estilo do Pop-up de Notificação
+   =============================== */
+   .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
+}
+
+.popup p {
+    margin: 0;
+}
+

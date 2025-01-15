@@ -1,0 +1,210 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Product Cards</title>
+            <link rel="stylesheet" href="./Css/style.css">
+        </head>
+        <body>
+            <!-- Navbar -->
+            <header>
+                <nav class="navbar">
+                    <div class="container">
+                        <a href="#" class="logo">LOJA ONLINE</a>
+                        <ul class="navbar-links">
+                             
+                            <li><a href="#products">Produtos</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><button id="cart-icon">🛒 (<span id="cart-count">0</span>)</button></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            
+
+            <!-- Main Container -->
+            <div class="container">
+                <h1 class="title">Nossos Produtos</h1>
+                <div id="products">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/spacetennis/media/uploads/produtos/foto/b7011c23dfa351.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h2 class="product-title">ADIDAS N90</h2>
+                            <p class="product-price">$19.99</p>
+                            <p class="product-description">
+                                Um ótimo produto que faz coisas incríveis.</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="1" data-name="ADIDAS N90" data-price="19.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://artwalk.vtexassets.com/arquivos/ids/491430/HQ870-8-001-1.jpg?v=638470724719870000" alt="Product 2">
+                        <div class="product-info">
+                            <h2 class="product-title">ADIDAS 360</h2>
+                            <p class="product-price">$29.99</p>
+                            <p class="product-description">Este produto é ainda melhor que o primeiro!</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="2" data-name="ADIDAS 360" data-price="29.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://modaum.cdn.magazord.com.br/img/2023/11/produto/1027/02-tenis-esportivo-masculino-adidas-em-tecido-preto-preto.jpeg?ims=600x600" alt="Product 3">
+                        <div class="product-info">
+                            <h2 class="product-title">ADIDAS LP850</h2>
+                            <p class="product-price">$39.99</p>
+                            <p class="product-description">Confortavel e elegante !</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="3" data-name="ADIDAS LP850" data-price="39.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://imgcentauro-a.akamaihd.net/1366x1366/98140431A9.jpg" alt="Product 4">
+                        <div class="product-info">
+                            <h2 class="product-title">ADIDAS MAD</h2>
+                            <p class="product-price">$49.99</p>
+                            <p class="product-description">Produzido no Brazil para a melhor eficácia na hora da entrega!</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="4" data-name="ADIDAS MAD" data-price="49.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://imgnike-a.akamaihd.net/1920x1920/013923ID.jpg" alt="Product 5">
+                        <div class="product-info">
+                            <h2 class="product-title">NIKE AIR MAX</h2>
+                            <p class="product-price">$59.99</p>
+                            <p class="product-description">A Melhor qualidade para os seus pés</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="5" data-name="NIKE AIR MAX" data-price="59.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://acdn.mitiendanube.com/stores/003/259/692/products/1-846c66a7ba5debbf8d17313404770471-1024-1024.png" alt="Product 6">
+                        <div class="product-info">
+                            <h2 class="product-title">PUMA SPEED</h2>
+                            <p class="product-price">$69.99</p>
+                            <p class="product-description">Perfeito para praticar sports!</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="6" data-name="PUMA SPEED" data-price="69.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://newyorkstore.cdn.magazord.com.br/img/2023/12/produto/632/tenis-puma-basket-classic.jpg" alt="Product 8">
+                        <div class="product-info">
+                            <h2 class="product-title">PUMA CLASSIC</h2>
+                            <p class="product-price">$89.99</p>
+                            <p class="product-description">Combina com qualquer roupa!</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="8" data-name="PUMA CLASSIC" data-price="89.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <img class="product-image" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/385378/01/sv01/fnd/BRA/w/1000/h/1000/fmt/png" alt="Product 8">
+                        <div class="product-info">
+                            <h2 class="product-title">PUMA CLASSIC</h2>
+                            <p class="product-price">$89.99</p>
+                            <p class="product-description">Ideal para o dia a dia !</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="8" data-name="PUMA CLASSIC" data-price="89.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="https://ostoresneakers.vteximg.com.br/arquivos/ids/220118-1000-1000/tenis-puma-ca-pro-classic-branco-preto-380190-03-0.jpg?v=638284135200000000" alt="Product 8">
+                        <div class="product-info">
+                            <h2 class="product-title">PUMA 2025</h2>
+                            <p class="product-price">$99.99</p>
+                            <p class="product-description">Todo mundo precisa de um desses!</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="8" data-name="PUMA CLASSIC" data-price="89.99">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Modal Carrinho -->
+            <div id="cart-modal" class="cart-modal">
+                <div class="cart-content">
+                    <h2>Seu Carrinho</h2>
+                    <ul id="cart-items"></ul>
+                    <p><strong>Total: $<span id="cart-total">0.00</span></strong></p>
+                    <button id="clear-cart">Limpar Carrinho</button>
+                    <button id="checkout">Conferir</button>
+                    <button id="close-cart">Fechar</button>
+                </div>
+            </div>
+
+            <div class="about-store" id="about">
+                <div class="container">
+                    <div class="about-text">
+                        <h2>Sobre a Loja</h2>
+                        <p>Bem-vindo à nossa loja online, onde você encontra os melhores produtos com a melhor qualidade. Oferecemos uma vasta gama de tênis e acessórios para atender a todas as suas necessidades. Nosso compromisso é oferecer conforto, estilo e durabilidade, garantindo sua satisfação total. Navegue pelos nossos produtos e descubra o que temos a oferecer!</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://assets.multiplan.com.br/Multiplan/filer_public/72/3b/723b77ee-5229-4724-af1a-5710699654e2/adidas_02_interna_16_9.jpg?ims=x800" alt="Imagem sobre a loja" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop-up de notificação de adição ao carrinho -->
+<div id="item-added-popup" class="popup">
+    <p id="popup-message">Novo item adicionado ao carrinho!</p>
+</div>
+
+            
+
+            <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <p>Entre em contato conosco:</p>
+                <ul class="footer-links">
+                    <li><a href="mailto:contato@lojaonline.com">contato@lojaonline.com</a></li>
+                    <li><a href="https://www.instagram.com/lojaonline" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/lojaonline" target="_blank" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link do Font Awesome -->
+    <!-- Link para o Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+
+            <script src="./Js/script.js"></script>
+        </body>
+        </html>
